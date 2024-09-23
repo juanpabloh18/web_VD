@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #304d30;
+    background-color: #567C3D;
     padding: 20px;
     text-align: center;
     position: sticky;
@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #a8d5a2;
+    color: #acd38c;
     transform: scale(1.1);
 }
 
@@ -89,7 +89,7 @@ nav ul li a:hover {
 .hero-text h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #a8d5a2;
+    color: #567C3D;
     transition: color 0.5s ease-in-out;
 }
 
@@ -152,7 +152,7 @@ nav ul li a:hover {
 }
 
 .content-section article h3 {
-    color: #a8d5a2;
+    color: #567C3D;
     margin-bottom: 20px;
     font-size: 1.8em;
     transition: color 0.3s ease-in-out;
@@ -173,7 +173,7 @@ nav ul li a:hover {
 .article-image {
     width: 100%;
     height: auto;
-    border: 3px solid #304d30;
+    border: 3px solid #7D8657;
     border-radius: 10px;
     margin-top: 20px;
     opacity: 0;
@@ -194,7 +194,7 @@ nav ul li a:hover {
 /* Galería con Efecto de Zoom */
 .gallery-section {
     padding: 60px 20px;
-    background-color: #3a4a3a;
+    background-color: #A19B6B;
 }
 
 .gallery-section h2 {
@@ -215,7 +215,7 @@ nav ul li a:hover {
     width: 300px;
     height: 200px;
     object-fit: cover;
-    border: 3px solid #304d30;
+    border: 3px solid #7D8657;
     border-radius: 10px;
     transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
     opacity: 0.9;
@@ -230,7 +230,7 @@ nav ul li a:hover {
 /* Sección de Contacto Animada */
 .contact-section {
     padding: 60px 20px;
-    background-color: #304d30;
+    background-color: #7D8657;
     text-align: center;
     animation: fadeInContact 1.2s forwards 0.8s ease-out;
 }
@@ -283,7 +283,7 @@ nav ul li a:hover {
 
 .contact-section form button {
     padding: 15px 30px;
-    background-color: #5c775c;
+    background-color: #567C3D;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -361,7 +361,7 @@ footer {
 }
 
 #prototipos article h3 {
-    color: #a8d5a2;
+    color: #567C3D;
     margin-bottom: 20px;
     font-size: 1.8em;
     transition: color 0.3s ease-in-out;
@@ -379,7 +379,7 @@ footer {
     width: 100%; /* Se asegura de que ocupe todo el ancho disponible */
     height: 450px; /* Ajustamos la altura manualmente para que se vea igual */
     border-radius: 10px;
-    border: 3px solid #304d30;
+    border: 3px solid #567C3D;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
     display: block; /* Comportamiento de bloque para asegurar alineación */
