@@ -8,7 +8,7 @@
 }
 
 body {
-    background: wheat;
+    background: rgb(25, 25, 25);
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: rgb(23, 40, 18);
+    /*background: rgb(23, 40, 18);*/
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
@@ -32,21 +32,21 @@ section {
 }
 
 .logo {
-    font-size: 2em;
-    color: green;
+    width: 150px;
     pointer-events: none;
 }
 
 .navigation a {
     text-decoration: none;
-    color: green;
+    color: rgb(255, 255, 255);
     padding: 6px 15px;
     border-radius: 20px;
     margin: 0 10px;
     font-weight: 600;
 }
 
-.navigation a:hover, .navigation a.active {
+.navigation a:hover,
+.navigation a.active {
     background: green;
     color: white;
 }
@@ -55,7 +55,7 @@ section {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-image: url(Imagenes/Ilustracio╠ün3.png);
+    background-image: url(Imagenes/Banner.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -66,19 +66,38 @@ section {
 
 .home .content h3 {
     font-size: 4rem;
-    color: rgb(10, 85, 10);
+    color: rgb(17, 126, 17);
+    text-align: right;
+    justify-items: left;
 }
 
 .home .content span {
     font-size: 3rem;
-    color: rgb(40, 39, 39);
-    padding: 1rem 0;
-    line-height: 1.5;
-}
-
-.home .content p {
-    font-size: 1.5rem;
     color: rgb(255, 255, 255);
     padding: 1rem 0;
     line-height: 1.5;
+    text-align: right;
+    justify-items: left;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.info {
+    width: 70%;
+    box-shadow: 0 0 20px rgba(27, 27, 27, 0.1);
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px 75px;
+    margin-top: -75px;
+    background-color: #000000;
+}
+
+.info p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
 }
