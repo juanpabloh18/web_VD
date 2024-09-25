@@ -129,13 +129,41 @@ section {
 }
 
 .articulos-content {
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
+    display: grid;
+    gap: 20px;
 }
 
 .articulo {
-    text-align: justify;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 35px;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.articulo p,
+h2,
+li {
+    color: #fff;
+}
+
+.enemy-image {
+    width: 100%;
+    max-width: 400px; /* Ajusta este valor al tamaño que prefieras */
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto 20px auto; /* Centra la imagen y añade margen inferior */
+    display: block; /* Asegura que esté centrado correctamente */
+    border: 3px solid #304d30;
+    border-radius: 10px;
+}
+
+.enemy-section ul {
+    flex: 1; /* Hace que el texto ocupe el espacio restante */
+}
+
+.enemy-section {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
