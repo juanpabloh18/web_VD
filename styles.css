@@ -7,6 +7,160 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Media queries para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 50px;
+    }
+    
+    .home .content h3 {
+        font-size: 3rem;
+    }
+
+    .home .content span {
+        font-size: 2rem;
+    }
+
+    .info p {
+        font-size: 1.2rem;
+    }
+
+    .prototipo {
+        padding: 15px;
+    }
+
+    .article-video {
+        max-width: 600px;
+        height: 350px;
+    }
+
+    .nosotros-foto {
+        max-width: 300px;
+    }
+}
+
+/* Media queries para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 30px;
+        flex-direction: column;
+    }
+    
+    .logo {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation a {
+        margin: 5px 0;
+    }
+
+    .home .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home .content span {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+    .prototipo {
+        padding: 10px;
+    }
+
+    .article-video {
+        max-width: 500px;
+        height: 300px;
+    }
+
+    .imagen-articulo,
+    .nosotros-foto {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .AcercaNosotros-content {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros-h2 {
+        font-size: 1rem;
+    }
+}
+
+/* Media queries para pantallas muy pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .home .content h3 {
+        font-size: 2rem;
+    }
+
+    .home .content span {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .info p {
+        font-size: 0.9rem;
+    }
+
+    .prototipo h2 {
+        font-size: 1.5rem;
+    }
+
+    .prototipo p {
+        font-size: 0.9rem;
+    }
+
+    .article-video {
+        max-width: 400px;
+        height: 250px;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+    background: #218838;
+}
+
+.back-to-top.show {
+    display: block;
+}
+
 body {
     background: rgb(43, 43, 43);
     min-height: 100vh;
@@ -55,9 +209,10 @@ section {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-image: url(Imagenes/Banner.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image: url('Imagenes/Banner.jpg');
+    background-size: cover; /* Asegura que cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 .home .content {
@@ -69,6 +224,7 @@ section {
     color: rgb(17, 126, 17);
     text-align: right;
     justify-items: left;
+    margin-bottom: 20px; /* Espacio entre el título y el contenido */
 }
 
 .home .content span {
@@ -106,11 +262,13 @@ section {
     font-size: 4rem;
     color: #fff;
     text-align: center;
+    margin-bottom: 30px; /* Añade espacio entre el título y el texto */
 }
 
 .articulos-content h2 {
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 20px; /* Espacio entre el título y el contenido */
 }
 
 .imagen-articulo {
@@ -145,6 +303,7 @@ section {
 h2,
 li {
     color: #fff;
+    margin-top: 15px; /* Añade espacio entre el texto y el contenido */
 }
 
 .enemy-image {
@@ -166,17 +325,20 @@ li {
     display: flex;
     align-items: flex-start;
     margin-bottom: 40px;
+    gap: 20px; /* Añade espacio entre la imagen y el texto */
 }
 
 .prototipos h3 {
     font-size: 3.2rem;
     color: #fff;
     text-align: center;
+    margin-bottom: 30px; /* Añade espacio entre el título y el texto */
 }
 
 .prototipos-content h2 {
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 20px; /* Añade espacio entre el título y el contenido */
 }
 
 .prototipos {
@@ -184,11 +346,16 @@ li {
     width: 80%;
     max-width: 2000px;
     margin: 30px auto;
+    text-align: center; /* Centrar todo el contenido de texto */
 }
 
 .prototipos-content {
-    display: grid;
+    display: flex; /* Usamos flex para centrar elementos */
+    flex-direction: column; /* Alineamos los elementos en una columna */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
     gap: 20px;
+    margin: 0 auto; /* Aseguramos que esté centrado */
 }
 
 .prototipo {
@@ -197,12 +364,16 @@ li {
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    margin: 0 auto 30px auto; /* Centrar la sección */
+    width: 100%; /* Aseguramos que ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto dentro del prototipo */
 }
 
 .prototipo p,
 h2,
 li {
     color: #fff;
+    margin-top: 15px; /* Añade espacio entre el texto y el contenido */
 }
 
 .article-video {
@@ -221,31 +392,47 @@ li {
     transform: scale(1.05);
 }
 
+/* Animación general de fadeIn para texto e imágenes */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(20px); /* Desplaza hacia abajo */
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0); /* Aparece en su posición original */
     }
 }
 
-.content-section article:hover {
-    transform: translateY(-10px);
+/* Aplica la animación de fadeIn a todas las secciones */
+section, .articulo, .prototipo, .enemy-section, .info, .container {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+/* Escalado suave en hover para imágenes y videos */
+.imagen-articulo:hover, .article-video:hover, .enemy-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 
-@keyframes fadeInImage {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+/* Efecto de sombra para hacer más llamativo el hover */
+.imagen-articulo:hover, .article-video:hover, .enemy-image:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* Para darle un retraso a las animaciones */
+.articulo, .prototipo {
+    animation-delay: 0.2s;
+}
+
+.enemy-section {
+    animation-delay: 0.4s;
+}
+
+.info {
+    animation-delay: 0.6s;
+}
+
 
 .content-section {
     padding: 60px 20px;
@@ -367,6 +554,7 @@ li {
     color: #fff;
     font-size: 1.4rem;
     text-align: center;
+    margin-bottom: 20px; /* Espacio entre el título y el contenido */
 }
 
 .nosotros-foto {
@@ -378,7 +566,7 @@ li {
 .nosotros-h2 {
     color: #fff;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
