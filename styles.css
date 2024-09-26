@@ -8,7 +8,7 @@
 }
 
 body {
-    background: rgb(25, 25, 25);
+    background: rgb(43, 43, 43);
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -249,7 +249,7 @@ li {
 
 .content-section {
     padding: 60px 20px;
-    background-color: #3a3a3a;
+    background-color: rgb(62, 62, 61);
     margin-bottom: 20px;
     opacity: 0;
     transform: translateY(20px);
@@ -335,4 +335,58 @@ li {
 
 .carrusel-next {
     right: 0px;
+}
+
+.AcercaNosotros {
+    padding: 0 0 0 0;
+    width: 100%;
+    max-width: 2000px;
+    margin: 30px auto;
+}
+
+.AcercaNosotros-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.Nosotros {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.Nosotros p {
+    color: #fff;
+    text-align: center;
+}
+
+.Nosotros h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.nosotros-foto {
+    width: 100%;
+    max-width: 400px; /* Ajusta este valor al tamaño que prefieras */
+    height: auto;
+}
+
+.nosotros-h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    transition: background-color 0.5s ease-in-out;
 }
