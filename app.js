@@ -1,40 +1,37 @@
-// Smooth scrolling para los enlaces de navegación
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+function App() {}
 
-// Auto image carousel para la galería con efecto de desvanecimiento
-let currentSlide = 0;
-const slides = document.querySelectorAll('.gallery img');
-const totalSlides = slides.length;
-
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.opacity = (i === index) ? '1' : '0'; // Cambia la opacidad
-        slide.style.transition = 'opacity 1s'; // 1 segundo para el efecto fade
-    });
+window.onload = function(event) {
+    var app = new App();
+    window.app = app;
 }
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    showSlide(currentSlide);
-}
+App.prototype.processingButton = function(event) {
+    const btn = event.currentTarget;
+    const carruselList = event.currentTarget.parentNode;
+    const track = event.currentTarget.parentNode.querySelector('#track');
+    const carrusel = track.querySelectorAll('.carrusel');
 
-setInterval(nextSlide, 3000); // Cambia la imagen cada 3 segundos
-showSlide(currentSlide);
+    const carruselWidth = carrusel[0].offsetWidth;
+    const listWidth = carruselList.offsetWidth;
+    const trackWidth = track.offsetWidth;
 
-// Cerrar el menú hamburguesa cuando se hace clic fuera de él
-document.addEventListener('click', function(event) {
-    const menu = document.getElementById('menu');
-    const hamburger = document.getElementById('hamburger');
-    
-    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-        menu.classList.remove('show');
+    let leftPosition = track.style.left === "" ? 0 : parseFloat(track.style.left) * -1;
+
+    if (btn.dataset.button === "button-prev") {
+        prevAction(leftPosition, carruselWidth, track);
+    } else {
+        nextAction(leftPosition, trackWidth, listWidth, carruselWidth, track);
     }
-});
+}
+
+function prevAction(leftPosition, carruselWidth, track) {
+    if (leftPosition > 0) {
+        track.style.left = `${-1 * (leftPosition - carruselWidth)}px`;
+    }
+}
+
+function nextAction(leftPosition, trackWidth, listWidth, carruselWidth, track) {
+    if (leftPosition < (trackWidth - listWidth)) {
+        track.style.left = `${-1 * (leftPosition + carruselWidth)}px`;
+    }
+}
