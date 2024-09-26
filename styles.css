@@ -40,35 +40,43 @@
 }
 
 /* Media queries para pantallas pequeñas (móviles) */
+/* Ajuste para el menú de navegación en pantallas pequeñas */
+/* Ajuste general para pantallas pequeñas */
 @media (max-width: 768px) {
     header {
-        padding: 15px 30px;
         flex-direction: column;
-    }
-    
-    .logo {
-        width: 120px;
-        margin-bottom: 10px;
+        align-items: center;
+        padding: 15px 0; /* Menos espacio en dispositivos pequeños */
     }
 
     .navigation {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        gap: 10px; /* Espaciado entre los enlaces */
+        align-items: center; /* Alinea el menú al centro */
     }
 
     .navigation a {
-        margin: 5px 0;
+        padding: 10px 20px; /* Aumentar el área de clic */
+        font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    }
+
+    .logo {
+        width: 120px; /* Reduce el tamaño del logo en móviles */
+        margin-bottom: 10px; /* Espaciado entre el logo y el menú */
     }
 
     .home .content h3 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Tamaño de fuente más pequeño en móviles */
+        text-align: center; /* Centrar el título */
     }
 
     .home .content span {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* Reducir el tamaño de la frase de bienvenida */
+        text-align: center; /* Centrar el texto */
     }
 
+    /* Ajustes generales para las secciones */
     .container {
         width: 90%;
     }
@@ -93,14 +101,40 @@
         height: auto;
     }
 
+    /* Ajustes para la sección de enemigos */
+    .enemy-section {
+        flex-direction: column; /* Alinea la imagen y el texto en columna */
+        align-items: center; /* Centra los elementos en la columna */
+        gap: 20px; /* Espaciado entre los elementos */
+    }
+
+    .enemy-image {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+        margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    }
+
+    .enemy-section ul {
+        width: 100%; /* Asegura que el texto ocupe todo el ancho */
+        padding-left: 10px; /* Ajuste del espaciado para el texto en móviles */
+    }
+
+    /* Ajustes para la sección "Acerca de Nosotros" */
     .AcercaNosotros-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Un solo bloque en móviles */
+        text-align: center; /* Centrar todo el contenido */
     }
 
     .nosotros-h2 {
         font-size: 1rem;
+        text-align: center; /* Centrar el texto */
+        margin-top: 20px;
+    }
+
+    .nosotros-foto {
+        width: 100%; /* Ajusta el tamaño de la imagen al ancho completo */
     }
 }
+
 
 /* Media queries para pantallas muy pequeñas (teléfonos) */
 @media (max-width: 480px) {
