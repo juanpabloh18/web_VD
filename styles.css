@@ -134,8 +134,10 @@ section {
 }
 
 .articulo {
-    background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto blanco */
+    background-color: #000;
+    /* Fondo negro */
+    color: #fff;
+    /* Texto blanco */
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -149,17 +151,21 @@ li {
 
 .enemy-image {
     width: 100%;
-    max-width: 400px; /* Ajusta este valor al tamaño que prefieras */
+    max-width: 400px;
+    /* Ajusta este valor al tamaño que prefieras */
     height: auto;
     object-fit: cover;
-    margin: 0 auto 20px auto; /* Centra la imagen y añade margen inferior */
-    display: block; /* Asegura que esté centrado correctamente */
+    margin: 0 auto 20px auto;
+    /* Centra la imagen y añade margen inferior */
+    display: block;
+    /* Asegura que esté centrado correctamente */
     border: 3px solid #304d30;
     border-radius: 10px;
 }
 
 .enemy-section ul {
-    flex: 1; /* Hace que el texto ocupe el espacio restante */
+    flex: 1;
+    /* Hace que el texto ocupe el espacio restante */
 }
 
 .enemy-section {
@@ -192,8 +198,10 @@ li {
 }
 
 .prototipo {
-    background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto blanco */
+    background-color: #000;
+    /* Fondo negro */
+    color: #fff;
+    /* Texto blanco */
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -206,15 +214,20 @@ li {
 }
 
 .article-video {
-    max-width: 800px; /* El mismo ancho máximo que el video de ejemplo */
-    width: 100%; /* Se asegura de que ocupe todo el ancho disponible */
-    height: 450px; /* Ajustamos la altura manualmente para que se vea igual */
+    max-width: 800px;
+    /* El mismo ancho máximo que el video de ejemplo */
+    width: 100%;
+    /* Se asegura de que ocupe todo el ancho disponible */
+    height: 450px;
+    /* Ajustamos la altura manualmente para que se vea igual */
     border-radius: 10px;
     border: 3px solid #567C3D;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
-    display: block; /* Comportamiento de bloque para asegurar alineación */
-    margin: 20px auto; /* Centra el video */
+    display: block;
+    /* Comportamiento de bloque para asegurar alineación */
+    margin: 20px auto;
+    /* Centra el video */
 }
 
 .article-video:hover {
@@ -226,6 +239,7 @@ li {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -241,6 +255,7 @@ li {
         opacity: 0;
         transform: scale(0.95);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -351,8 +366,10 @@ li {
 }
 
 .Nosotros {
-    background-color: #000; /* Fondo negro */
-    color: #fff; /* Texto blanco */
+    background-color: #000;
+    /* Fondo negro */
+    color: #fff;
+    /* Texto blanco */
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -371,7 +388,8 @@ li {
 
 .nosotros-foto {
     width: 100%;
-    max-width: 400px; /* Ajusta este valor al tamaño que prefieras */
+    max-width: 400px;
+    /* Ajusta este valor al tamaño que prefieras */
     height: auto;
 }
 
@@ -389,4 +407,61 @@ footer {
     padding: 20px;
     font-size: 1em;
     transition: background-color 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .navigation a {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home .content span {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .articulos-content,
+    .prototipos-content {
+        grid-template-columns: 1fr;
+        /* Cambia de múltiples columnas a una sola */
+    }
+}
+
+@media (max-width: 768px) {
+    .carrusel img {
+        width: 100px;
+        /* Ajusta el tamaño de las imágenes */
+        height: auto;
+    }
+
+    .carrusel-arrow {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    .info p {
+        font-size: 1.2rem;
+    }
 }
