@@ -558,6 +558,66 @@ section, .articulo, .prototipo, .enemy-section, .info, .container {
     right: 0px;
 }
 
+/*Mapa*/ 
+.Mapa {
+    width: 100%;
+    margin: 0px 0px;
+}
+
+.Mapa-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.Mapa-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    transition: .5s ease-in-out;
+    width: 100%;
+}
+
+.IMG_mapa_1, .IMG_mapa_2, .IMG_mapa_3 {
+    position: relative;
+    width: 33.33%; /* Asegura que todas las imágenes ocupen un tercio del ancho del contenedor */
+    padding: 0 18px; /* Ajusta este valor para cambiar el espacio entre imágenes */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    
+}
+
+.IMG_mapa_1 img, .IMG_mapa_2 img, .IMG_mapa_3 img {
+    object-fit: cover; /* Ajusta la imagen para que se recorte sin deformarse */
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    border-radius: 15px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+.IMG_mapa_1 h4, .IMG_mapa_2 h4, .IMG_mapa_3 h4 {
+    color: white;
+    text-align: center;
+ }
+
+
+
+
+
+
+/*Mapa*/
+
 .AcercaNosotros {
     padding: 0 0 0 0;
     width: 100%;
