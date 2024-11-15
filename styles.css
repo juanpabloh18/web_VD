@@ -815,3 +815,157 @@ footer {
         gap: 15px; /* Espaciado reducido entre tarjetas */
     }
 }
+/* Estilo general del header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque en el fondo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera debajo */
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+}
+
+/* Barra de navegación para pantallas grandes */
+.navigation {
+    display: flex;
+    gap: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation a.active {
+    background-color: green;
+    color: white;
+}
+
+.navigation a:hover {
+    background-color: #A2C34B;
+    color: black;
+}
+
+/* Menú hamburguesa - Pantallas pequeñas */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Navegación móvil */
+.mobile-navigation {
+    display: none; /* Ocultamos inicialmente */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo negro más oscuro para navegación móvil */
+    width: 100%;
+    max-width: 250px;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    align-items: center;
+}
+
+.mobile-navigation a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mobile-navigation a.active {
+    background-color: green;
+    color: white;
+}
+
+.mobile-navigation a:hover {
+    background-color: #A2C34B;
+    color: black;
+}
+
+/* Responsivo: Mostrar menú hamburguesa en móviles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Mostramos el ícono */
+    }
+
+    .navigation {
+        display: none; /* Ocultamos la navegación de escritorio */
+    }
+
+    .mobile-navigation.show {
+        display: flex; /* Mostramos la navegación móvil */
+    }
+}
+
+.home .content {
+    max-width: 50rem;
+    text-align: center; /* Centra el texto */
+    margin: 0 auto; /* Centra todo el contenedor horizontalmente */
+    color: white; /* Asegura que el texto sea blanco */
+    position: relative; /* Necesario para efectos adicionales */
+}
+
+.home .content h3 {
+    font-size: 4rem;
+    color: green; /* Color principal del título */
+    margin-bottom: 10px; /* Espacio entre el título y el subtítulo */
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5), 
+                 -2px -2px 0px rgba(255, 255, 255, 0.2); /* Efecto de 3D */
+    font-weight: bold; /* Asegura que sea visible */
+}
+
+.home .content span {
+    font-size: 2.5rem;
+    color: white; /* Color blanco para el subtítulo */
+    display: block; /* Asegura que esté en una línea separada */
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
+    margin-bottom: 20px; /* Espacio entre el subtítulo y el texto adicional */
+    position: relative; /* Necesario si quieres usar efectos de alineación */
+    top: 10px; /* Ajusta la posición vertical */
+}
+
+
+.home .content p {
+    font-size: 1.5rem;
+    color: white; /* Color blanco para el texto adicional */
+    line-height: 1.8; /* Mejor separación entre líneas */
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto dentro de su contenedor */
+    margin-top: 10px; /* Espacio superior para separarlo del subtítulo */
+    padding: 0 20px; /* Espaciado interno para que tenga margen en pantallas pequeñas */
+    max-width: 60rem; /* Limita el ancho para que el texto no sea demasiado largo */
+}
+

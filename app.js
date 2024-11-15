@@ -66,3 +66,11 @@ function nextAction(leftPosition, trackWidth, listWidth, carruselWidth, track) {
         track.style.left = `${-1 * (leftPosition + carruselWidth)}px`;
     }
 }
+
+const menuToggle = document.getElementById('mobile-menu');
+const mobileNavigation = document.getElementById('mobile-navigation');
+
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    mobileNavigation.classList.toggle('show');
+});

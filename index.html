@@ -12,9 +12,21 @@
 <body>
     <header>
         <img src="./Imagenes/LOGO.png" class="logo">
-        <nav class="navigation">
+        <div class="menu-toggle" id="mobile-menu">
+            <!-- Icono del menú hamburguesa -->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="navigation" id="desktop-navigation">
             <a href="#Inicio" class="active">Inicio</a>
-            <a href="#Inicio" class="back-to-top" id="back-to-top">&#8679;</a>
+            <a href="#Articulos">Artículos</a>
+            <a href="#Prototipos">Prototipos</a>
+            <a href="#Galeria">Galería</a>
+            <a href="#Acerca de">Acerca de</a>
+        </nav>
+        <nav class="mobile-navigation" id="mobile-navigation">
+            <a href="#Inicio" class="active">Inicio</a>
             <a href="#Articulos">Artículos</a>
             <a href="#Prototipos">Prototipos</a>
             <a href="#Galeria">Galería</a>
@@ -22,16 +34,16 @@
         </nav>
     </header>
 
+
     <section class="home" id="Inicio">
         <div class="content">
             <h3>Bienvenidos a Ensam</h3>
             <span>Un mundo postapocalíptico</span>
+            <p>Descubre el desarrollo de nuestro videojuego Ensam, ambientado en un mundo devastado donde la naturaleza
+                ha
+                reclamado su lugar. Explora con nosotros el proceso creativo detrás de cada nivel, personaje y mecánica
+            </p>
         </div>
-    </section>
-
-    <section class="info container">
-        <p>Descubre el desarrollo de nuestro videojuego Ensam, ambientado en un mundo devastado donde la naturaleza ha
-            reclamado su lugar. Explora con nosotros el proceso creativo detrás de cada nivel, personaje y mecánica</p>
     </section>
 
     <section class="content-section" id="Articulos">
@@ -382,63 +394,79 @@
             <div class="prototipo">
                 <h2>Inicio Ensam</h2>
                 <p>Presenta la animación o secuencia inicial del juego.</p>
-                <iframe class="article-video" src="https://www.youtube.com/embed/RMAoOB2iLFU" title="Inicio Ensam" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe class="article-video" src="https://www.youtube.com/embed/RMAoOB2iLFU" title="Inicio Ensam"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
             </div>
             <div class="prototipo">
                 <h2>Menú Ensam</h2>
                 <p>Muestra cómo se ve y funciona el menú principal del juego.</p>
-                <iframe class="article-video" src="https://www.youtube.com/embed/9LDn3m9_W5o" title="Menú Ensam" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe class="article-video" src="https://www.youtube.com/embed/9LDn3m9_W5o" title="Menú Ensam"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
             </div>
             <div class="prototipo">
                 <h2>Estilo Visual Ensam</h2>
                 <p>Explica el diseño artístico y la estética visual del juego.</p>
-                <iframe class="article-video" src="https://www.youtube.com/embed/WqqcVgXZZt0" title="Estilo Visual Ensam" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe class="article-video" src="https://www.youtube.com/embed/WqqcVgXZZt0"
+                    title="Estilo Visual Ensam" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
             </div>
         </div>
     </section>
-    
+
     <section class="content-section" id="Mecanicas">
         <h3>Mecánicas del Juego</h3>
         <div class="videos-section container">
             <div class="prototipo">
                 <h2>Combate Ensam</h2>
                 <p>Explica el sistema de combate, combinando ataques cuerpo a cuerpo y a distancia.</p>
-                <iframe class="article-video" src="https://www.youtube.com/embed/1FXGoO_Mc-A" title="Combate Ensam" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe class="article-video" src="https://www.youtube.com/embed/1FXGoO_Mc-A" title="Combate Ensam"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
             </div>
             <div class="prototipo">
                 <h2>Interacción Ensam</h2>
                 <p>Muestra cómo el jugador interactúa con objetos y elementos del entorno.</p>
-                <iframe class="article-video" src="https://www.youtube.com/embed/jn1sLyduT38" title="Interacción Ensam" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe class="article-video" src="https://www.youtube.com/embed/jn1sLyduT38" title="Interacción Ensam"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
             </div>
             <div class="prototipo">
                 <h2>Puzzles Ensam</h2>
                 <p>Enseña cómo resolver acertijos integrados en el mundo del juego.</p>
-                <iframe class="article-video" src="https://www.youtube.com/embed/rtfeZLyEg6E" title="Puzzles Ensam" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe class="article-video" src="https://www.youtube.com/embed/rtfeZLyEg6E" title="Puzzles Ensam"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
             </div>
             <div class="prototipo">
                 <h2>Aventura Semilineal Ensam</h2>
                 <p>Muestra el diseño de exploración semilineal del juego y sus entornos.</p>
-                <iframe class="article-video" src="https://www.youtube.com/embed/N6ks0VJweqA" title="Aventura Semilineal Ensam" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe class="article-video" src="https://www.youtube.com/embed/N6ks0VJweqA"
+                    title="Aventura Semilineal Ensam" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
             </div>
             <div class="prototipo">
                 <h2>Sistema de Mejoras Ensam</h2>
                 <p>Detalla cómo funcionan las mejoras del personaje y las estadísticas dentro del juego.</p>
-                <iframe class="article-video" src="https://www.youtube.com/embed/aM0XJ1jBVYs" title="Sistema de Mejoras Ensam" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe class="article-video" src="https://www.youtube.com/embed/aM0XJ1jBVYs"
+                    title="Sistema de Mejoras Ensam" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
             </div>
         </div>
@@ -450,13 +478,21 @@
         <div class="gameplay-section container">
             <div class="prototipo">
                 <h2>Gameplay con Comentarios</h2>
-                <p>Observa el gameplay completo del juego Ensam con comentarios para guiarte a través de las mecánicas y el desarrollo del juego.</p>
-                <iframe class="article-video" src="https://www.youtube.com/embed/YA4WPa7LLxc" title="Gameplay con Comentarios" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Observa el gameplay completo del juego Ensam con comentarios para guiarte a través de las mecánicas y
+                    el desarrollo del juego.</p>
+                <iframe class="article-video" src="https://www.youtube.com/embed/YA4WPa7LLxc"
+                    title="Gameplay con Comentarios" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <div class="prototipo">
                 <h2>Gameplay sin Comentarios</h2>
-                <p>Gameplay completo del juego Ensam sin comentarios para disfrutar de la experiencia original del juego.</p>
-                <iframe class="article-video" src="https://www.youtube.com/embed/z8SkawOs6Qk" title="Gameplay sin Comentarios" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Gameplay completo del juego Ensam sin comentarios para disfrutar de la experiencia original del
+                    juego.</p>
+                <iframe class="article-video" src="https://www.youtube.com/embed/z8SkawOs6Qk"
+                    title="Gameplay sin Comentarios" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
     </section>
