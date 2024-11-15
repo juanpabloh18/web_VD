@@ -687,3 +687,131 @@ footer {
     transition: background-color 0.5s ease-in-out;
 }
 
+/* Media queries para tabletas (pantallas medianas) */
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .home .content h3 {
+        font-size: 3rem;
+    }
+
+    .home .content span {
+        font-size: 2rem;
+    }
+
+    .info p {
+        font-size: 1.2rem;
+    }
+
+    .prototipo {
+        padding: 15px;
+    }
+
+    .article-video {
+        max-width: 600px;
+        height: 350px;
+    }
+
+    .nosotros-foto {
+        max-width: 300px;
+    }
+
+    .Mapa-list {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Reduce el tamaño mínimo de las tarjetas */
+        gap: 20px;
+    }
+}
+
+/* Media queries para móviles (pantallas pequeñas) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navigation a {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    .home .content h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .home .content span {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+    .article-video {
+        max-width: 500px;
+        height: 300px;
+    }
+
+    .imagen-articulo,
+    .nosotros-foto {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Mapa-list {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
+    }
+}
+
+/* Media queries para pantallas muy pequeñas (teléfonos pequeños) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .home .content h3 {
+        font-size: 2rem;
+    }
+
+    .home .content span {
+        font-size: 1.5rem;
+    }
+
+    .info p {
+        font-size: 0.9rem;
+    }
+
+    .prototipo h2 {
+        font-size: 1.5rem;
+    }
+
+    .prototipo p {
+        font-size: 0.9rem;
+    }
+
+    .article-video {
+        max-width: 400px;
+        height: 250px;
+    }
+
+    .Mapa-list {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 15px; /* Espaciado reducido entre tarjetas */
+    }
+}
