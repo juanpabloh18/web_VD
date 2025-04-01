@@ -1,3 +1,1 @@
-# mi-pagina-web-vj
-# mi-pagina-web-vj
-"# web_VD" 
+https://web-avbwduxdi-juan-pablos-projects-e06919ee.vercel.app/
